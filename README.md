@@ -28,7 +28,7 @@ The project follows a layered architecture inspired by Go-Kit. Here's a high-lev
 - **transport**: This layer handles the HTTP routing and request/response processing. It contains endpoint definitions, middleware, and error handling.
 
 Below is the directory structure for more details:
-
+```
 .
 ├── cmd
 │   └── app
@@ -47,7 +47,7 @@ Below is the directory structure for more details:
     ├── note_handler.go
     ├── routing.go
     └── user_handler.go
-
+```
 ## Setup
 
 1. Clone this repository.

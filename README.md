@@ -28,7 +28,7 @@ The project follows a layered architecture inspired by Go-Kit. Here's a high-lev
 - **transport**: This layer handles the HTTP routing and request/response processing. It contains endpoint definitions, middleware, and error handling.
 
 Below is the directory structure for more details:
-
+```
 .
 ├── cmd
 │   └── app
@@ -47,6 +47,10 @@ Below is the directory structure for more details:
     ├── note_handler.go
     ├── routing.go
     └── user_handler.go
+<<<<<<< HEAD
+=======
+```
+>>>>>>> 62f74db56565a9bb50cfa00feaa1a88c47ffe790
 ## Setup
 
 1. Clone this repository.
@@ -81,7 +85,7 @@ Below is the directory structure for more details:
     - Response: 200 OK on success, 400 Bad Request if the note ID is invalid, 401 Unauthorized if JWT token is invalid.
     - Curl: `curl -X GET -H "Authorization: Bearer <JWT token>" http://localhost:<port>/notes/delete/<note_id>`
 
-Please replace `<string>`, `<JWT token>`, `<port>`, `<name>`, `<email>`, `<password>`, `<note content>`, and `<note_id>` with actual values.
+Please replace `<string>`, `<JWT token>`, `<port>`, `<name>`, `<email>`, `<password>`, `<note content>`, and `<note_id>` with actual values. By default the application runs on 8080. 
 
 ## Author
 

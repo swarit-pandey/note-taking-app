@@ -50,7 +50,6 @@ Below is the directory structure for more details:
 <<<<<<< HEAD
 =======
 ```
->>>>>>> 62f74db56565a9bb50cfa00feaa1a88c47ffe790
 ## Setup
 
 1. Clone this repository.

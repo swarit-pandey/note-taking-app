@@ -47,7 +47,6 @@ Below is the directory structure for more details:
     ├── note_handler.go
     ├── routing.go
     └── user_handler.go
-
 ## Setup
 
 1. Clone this repository.

@@ -82,7 +82,7 @@ Below is the directory structure for more details:
     - Response: 200 OK on success, 400 Bad Request if the note ID is invalid, 401 Unauthorized if JWT token is invalid.
     - Curl: `curl -X GET -H "Authorization: Bearer <JWT token>" http://localhost:<port>/notes/delete/<note_id>`
 
-Please replace `<string>`, `<JWT token>`, `<port>`, `<name>`, `<email>`, `<password>`, `<note content>`, and `<note_id>` with actual values.
+Please replace `<string>`, `<JWT token>`, `<port>`, `<name>`, `<email>`, `<password>`, `<note content>`, and `<note_id>` with actual values. By default the application runs on 8080. 
 
 ## Author
 

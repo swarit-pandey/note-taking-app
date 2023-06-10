@@ -23,7 +23,7 @@ func NewRouter(userService service.UserService, noteService service.NoteService)
 	{
 		noteRoutes.GET("/list", noteHandler.ListNotes)
 		noteRoutes.POST("/create", noteHandler.CreateNote)
-		noteRoutes.GET("/delete/:id", noteHandler.DeleteNote)
+		noteRoutes.DELETE("/delete/:id", noteHandler.DeleteNote)
 	}
 
 	return r, nil

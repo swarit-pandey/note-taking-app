@@ -14,3 +14,8 @@ type Note struct {
 	UserID  uint   `gorm:"not null"`
 	Content string `gorm:"type:text;not null"`
 }
+
+type NoteResponse struct {
+	UserID  uint   `json:"user_id"`
+	Content string `json:"content"`
+}

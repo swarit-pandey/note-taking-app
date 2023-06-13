@@ -78,10 +78,10 @@ Below is the directory structure for more details:
     - Response: 200 OK on success, 400 Bad Request if the request format is invalid, 401 Unauthorized if JWT token is invalid.
     - Curl: `curl -X POST -H "Content-Type: application/json" -H "Authorization: Bearer <JWT token>" -d '{"content": "<note content>"}' http://localhost:<port>/notes/create`
 
-- **Delete Note** - `GET /notes/delete/:id`
+- **Delete Note** - `DELETE /notes/delete/:id`
     - Headers: Authorization: Bearer <JWT token>
     - Response: 200 OK on success, 400 Bad Request if the note ID is invalid, 401 Unauthorized if JWT token is invalid.
-    - Curl: `curl -X GET -H "Authorization: Bearer <JWT token>" http://localhost:<port>/notes/delete/<note_id>`
+    - Curl: `curl -X DELETE -H "Authorization: Bearer <JWT token>" http://localhost:<port>/notes/delete/<note_id>`
 
 Please replace `<string>`, `<JWT token>`, `<port>`, `<name>`, `<email>`, `<password>`, `<note content>`, and `<note_id>` with actual values. By default the application runs on 8080. 
 

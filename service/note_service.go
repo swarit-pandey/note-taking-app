@@ -4,7 +4,7 @@ import "github.com/sprectza/note-taking-app.git/repository"
 
 type NoteService interface {
 	CreateNote(note repository.Note) error
-	GetNotesByUserID(userID uint) ([]repository.Note, error)
+	GetNotesByUserID(userID uint) ([]repository.NoteResponse, error)
 	DeleteNoteByID(id uint) error
 	GetNoteByID(id uint) (repository.Note, error)
 }
@@ -21,7 +21,7 @@ func (s *noteService) CreateNote(note repository.Note) error {
 	return s.noteRepository.CreateNote(note)
 }
 
-func (s *noteService) GetNotesByUserID(userID uint) ([]repository.Note, error) {
+func (s *noteService) GetNotesByUserID(userID uint) ([]repository.NoteResponse, error) {
 	return s.noteRepository.GetNotesByUserID(userID)
 }
 

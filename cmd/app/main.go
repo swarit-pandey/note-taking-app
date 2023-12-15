@@ -30,9 +30,11 @@ func main() {
 	db.AutoMigrate(&repository.User{}, &repository.Note{})
 	userRepo := repository.NewUserRepository(db)
 	noteRepo := repository.NewNoteRepository(db)
+	log.Print("Repository layer initialised.")
 
 	userService := service.NewUserService(userRepo)
 	noteService := service.NewNoteService(noteRepo)
+	log.Print("Service layer initialised.")
 
 	r, err := transport.NewRouter(userService, noteService)
 	if err != nil {
